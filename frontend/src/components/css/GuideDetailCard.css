@@ -1,0 +1,48 @@
+.guide-card-container {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set a fixed width for the card */
+    transition: transform 0.2s;
+
+    display: flex;
+  }
+  
+  .guide-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .guide-photo {
+    background: no-repeat center center;
+    background-size: cover;
+    width: 40%;
+    height: 200px; /* Fixed height for the photo */
+    object-fit: cover; /* Ensure the photo covers the area */
+  }
+  
+  .guide-info {
+    padding: 15px;
+  }
+  
+  .guide-name {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .guide-location,
+  .guide-phone {
+    margin: 5px 0;
+    color: #666; /* Grey color for details */
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 600px) {
+    .guide-card-container {
+        flex-direction: column;
+    }
+    .guide-photo{
+        width: auto;
+    }
+  }
